@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { UploadFolderComponent } from '../../features/upload-folder/upload-folder';
 import { FileExplorerComponent } from '../../features/file-explorer/file-explorer';
-import { LivePreviewComponent } from '../../features/live-preview/live-preview';
+import { ControlPanelComponent } from '../../features/control-panel/control-panel';
 
 @Component({
   selector: 'app-dashboard',
@@ -12,7 +12,7 @@ import { LivePreviewComponent } from '../../features/live-preview/live-preview';
     CommonModule,
     UploadFolderComponent,
     FileExplorerComponent,
-    LivePreviewComponent
+    ControlPanelComponent
   ],
   templateUrl: './dashboard.html'
 })

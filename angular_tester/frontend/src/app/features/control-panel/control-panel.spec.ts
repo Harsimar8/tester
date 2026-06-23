@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ControlList } from './control-list';
+import { ControlPanel } from './control-panel';
 
-describe('ControlList', () => {
-  let component: ControlList;
-  let fixture: ComponentFixture<ControlList>;
+describe('ControlPanel', () => {
+  let component: ControlPanel;
+  let fixture: ComponentFixture<ControlPanel>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ControlList],
+      imports: [ControlPanel],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(ControlList);
+    fixture = TestBed.createComponent(ControlPanel);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

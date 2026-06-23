@@ -1,0 +1,25 @@
+<h3>Controls</h3>
+
+<div *ngIf="controls.length === 0">
+  No controls found in HTML
+</div>
+
+<div *ngFor="let c of controls" class="control-item">
+
+  <div [ngSwitch]="c.type">
+
+    <button *ngSwitchCase="'button'">
+      {{ c.label }}
+    </button>
+
+    <input *ngSwitchCase="'slider'" type="range" />
+
+    <input *ngSwitchCase="'text'" type="text" />
+
+    <div *ngSwitchDefault>
+      Unknown: {{ c.type }}
+    </div>
+
+  </div>
+
+</div>

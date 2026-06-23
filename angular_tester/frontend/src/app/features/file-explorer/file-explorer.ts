@@ -8,7 +8,9 @@ import { LivePreviewComponent } from '../live-preview/live-preview';
   selector: 'app-file-explorer',
   standalone: true,
   imports: [CommonModule, LivePreviewComponent],
-  templateUrl: './file-explorer.html'
+ 
+  templateUrl: './file-explorer.html',
+   styleUrls: ['./file-explorer.css']
 })
 export class FileExplorerComponent {
 

@@ -5,7 +5,8 @@ import { PreviewService } from '../../core/services/preview';
 @Component({
   selector: 'app-live-preview',
   standalone: true,
-  templateUrl: './live-preview.html'
+  templateUrl: './live-preview.html',
+  styleUrls: ['./live-preview.css']
 })
 export class LivePreviewComponent {
 

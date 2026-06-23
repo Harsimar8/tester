@@ -1,14 +1,16 @@
-<div style="display:flex; height:100vh;">
+<div>
 
-  <div style="width:30%; border-right:1px solid #ddd;">
-    <div *ngFor="let file of htmlFiles"
-         (click)="openFile(file)"
-         style="padding:10px; cursor:pointer;">
-      {{ file.name }}
-    </div>
+  <div class="file-list">
+
+  <div *ngFor="let file of htmlFiles"
+       (click)="openFile(file)"
+       class="file-item">
+    {{ file.name }}
   </div>
 
-  <div style="width:70%;">
+</div>
+
+  <div class="preview-area">
     <app-live-preview></app-live-preview>
   </div>
 
